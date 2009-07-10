@@ -26,13 +26,15 @@
         An Ant script to build the Symbian ECOMPLUS component.
     </description>
 
+    <!-- Enables us to access the systems environment variables, e.g. ${env.Path} (note "Path" is case sensitive in Ant and must exactly "Path" in Windows 2000 and greater) -->
+    <property environment="env" />
 
-    <path id="SVN.classpath">
-        <fileset dir="C:/java/svnant-1.0.0/lib">
-            <include name="*.jar" />
-        </fileset>
-    </path>
-    <taskdef resource="svntask.properties" classpathref="SVN.classpath" />
+	<path id="svnant.classpath">
+		<fileset dir="${env.BLUEWHALE_JAVA}/svnant-1.1.0-RC2/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	<typedef resource="org/tigris/subversion/svnant/svnantlib.xml" classpathref="svnant.classpath" />
 
 
     <!-- Everything depends on property ${deviceSDK}=one of s60v1fp2, s60v2fp2, s60v2fp3, s60v3fp0, etc. -->
@@ -43,9 +45,6 @@
     <!-- override ${name} on command line used to invoke ant by specifying 'ant -Dname=val'.			-->
     <!-- Don't set at this outer scope: <property name = "platform" value = "armi" /> -->
     <!-- Don't set at this outer scope: <property name = "release" value = "urel" />  -->
-
-    <!-- Enables us to access the systems environment variables, e.g. ${env.Path} (note "Path" is case sensitive in Ant and must exactly "Path" in Windows 2000 and greater) -->
-    <property environment="env" />
 
 
 
@@ -82,7 +81,7 @@
 	<target name="cruisecontrol_ecomplus_uiqv3fp0_winscw" depends="update,ecomplus_uiqv3fp0_winscw" />
 	
     <target name="update">
-        <svn>
+    	<svn javasvn="no">
             <update dir="${basedir}" />
         </svn>
     </target>
