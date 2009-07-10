@@ -1,0 +1,4 @@
+EXPORTS
+	_ZN16REComPlusSession21CreateImplementationLE4TUidS0_Pv @ 1 NONAME ; CODE
+	_ZN16REComPlusSession23DestroyedImplementationE4TUid @ 2 NONAME ; CODE
+

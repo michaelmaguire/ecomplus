@@ -1,0 +1,4 @@
+EXPORTS
+	?CreateImplementationL@REComPlusSession@@SAPAVMUnknown@@VTUid@@0PAX@Z @ 1 NONAME ; class MUnknown * REComPlusSession::CreateImplementationL(class TUid, class TUid, void *)
+	?DestroyedImplementation@REComPlusSession@@SAXVTUid@@@Z @ 2 NONAME ; void REComPlusSession::DestroyedImplementation(class TUid)
+

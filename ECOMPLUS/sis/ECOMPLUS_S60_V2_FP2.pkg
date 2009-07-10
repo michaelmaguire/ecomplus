@@ -1,0 +1,14 @@
+; ECOMPLUS.pkg
+;
+
+;Language - standard language definitions
+&EN
+
+; standard SIS file header
+#{"ECOMPLUS"},(0x10200DE7),1,0,0
+
+;Supports Series 60 v 2.0
+(0x101F7960), 0, 0, 0, {"Series60ProductID"}
+
+;
+"epoc32\release\armi\urel\ECOMPLUS.DLL"-"!:\system\libs\ECOMPLUS.dll"
