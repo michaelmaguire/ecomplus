@@ -1,0 +1,4 @@
+EXPORTS
+	?CreateImplementationL@REComPlusSession@@SAPAVMUnknown@@VTUid@@0PAX@Z @ 1 NONAME ; public: static class MUnknown * __cdecl REComPlusSession::CreateImplementationL(class TUid,class TUid,void *)
+	?DestroyedImplementation@REComPlusSession@@SAXVTUid@@@Z @ 2 NONAME ; public: static void __cdecl REComPlusSession::DestroyedImplementation(class TUid)
+

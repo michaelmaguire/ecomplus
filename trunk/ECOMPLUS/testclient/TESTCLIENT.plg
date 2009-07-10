@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TESTCLIENT - Win32 Uni Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Michael\LOCALS~1\Temp\RSP1A8.tmp" with contents
+[
+/nologo /Zp4 /MLd /W4 /Zi /Od /X /I "\NONAMEBRAND\IMAPCLIENT\SYMBIAN\COM\TESTCLIENT" /I "\Symbian\7.0s\Series60_v21\EPOC32\INCLUDE" /D "__SYMBIAN32__" /D "__VC32__" /D "__WINS__" /D "__EXE__" /D "_DEBUG" /D "_UNICODE" /FR"\Symbian\7.0s\Series60_v21\EPOC32\BUILD\NONAMEBRAND\IMAPCLIENT\SYMBIAN\COM\TESTCLIENT\TESTCLIENT\WINS\UDEB/" /Fo"\Symbian\7.0s\Series60_v21\EPOC32\BUILD\NONAMEBRAND\IMAPCLIENT\SYMBIAN\COM\TESTCLIENT\TESTCLIENT\WINS\UDEB/" /Fd"\Symbian\7.0s\Series60_v21\EPOC32\RELEASE\WINS\UDEB\TESTCLIENT.PDB" /GF /c 
+"C:\NONAMEBRAND\IMAPCLIENT\SYMBIAN\COM\TESTCLIENT\Testclient.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Michael\LOCALS~1\Temp\RSP1A8.tmp" 
+Creating temporary file "C:\DOCUME~1\Michael\LOCALS~1\Temp\RSP1A9.tmp" with contents
+[
+"\Symbian\7.0s\Series60_v21\EPOC32\RELEASE\WINS\UDEB\EEXE.LIB" "\Symbian\7.0s\Series60_v21\EPOC32\RELEASE\WINS\UDEB\euser.lib" "\Symbian\7.0s\Series60_v21\EPOC32\RELEASE\WINS\UDEB\ecom.lib" "\Symbian\7.0s\Series60_v21\EPOC32\RELEASE\WINS\UDEB\ecomplus.lib" /nologo /entry:"_E32Startup" /subsystem:windows /incremental:yes /pdb:"\Symbian\7.0s\Series60_v21\EPOC32\RELEASE\WINS\UDEB/TESTCLIENT.pdb" /debug /machine:IX86 /nodefaultlib /include:"?_E32Startup@@YGXXZ" /out:"\Symbian\7.0s\Series60_v21\EPOC32\RELEASE\WINS\UDEB/TESTCLIENT.exe" /WARN:3 
+\Symbian\7.0s\Series60_v21\EPOC32\BUILD\NONAMEBRAND\IMAPCLIENT\SYMBIAN\COM\TESTCLIENT\TESTCLIENT\WINS\UDEB\Testclient.obj
+\Symbian\7.0s\Series60_v21\EPOC32\BUILD\NONAMEBRAND\IMAPCLIENT\SYMBIAN\COM\TESTCLIENT\TESTCLIENT\WINS\UDEB\Testclient.uid.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\Michael\LOCALS~1\Temp\RSP1A9.tmp"
+<h3>Output Window</h3>
+Compiling...
+Testclient.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+TESTCLIENT.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

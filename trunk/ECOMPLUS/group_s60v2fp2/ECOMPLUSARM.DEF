@@ -1,0 +1,4 @@
+EXPORTS
+	CreateImplementationL__16REComPlusSessionG4TUidT1Pv @ 1 NONAME R3UNUSED ; REComPlusSession::CreateImplementationL(TUid, TUid, void *)
+	DestroyedImplementation__16REComPlusSessionG4TUid @ 2 NONAME R3UNUSED ; REComPlusSession::DestroyedImplementation(TUid)
+
