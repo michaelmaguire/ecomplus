@@ -30,7 +30,7 @@ TARGETTYPE    dll
 UID           0x1000008d 0x2000E278
 
 //VENDORID        0
-CAPABILITY     NetworkServices ReadUserData WriteUserData ReadDeviceData WriteDeviceData
+CAPABILITY     NetworkServices ReadUserData WriteUserData ReadDeviceData WriteDeviceData TrustedUI
 
 SOURCEPATH    .
 SOURCE        ..\src\ECOMPLUS.cpp
