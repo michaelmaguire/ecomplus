@@ -25,6 +25,7 @@
 
 const TInt KUidW960iValue = 0x20002e6a;
 const TInt KUidZ10Value = 0x1027400c;
+const TInt KUidN96Value = 0x20002D82;
 
 /**
  * Usage notes:
