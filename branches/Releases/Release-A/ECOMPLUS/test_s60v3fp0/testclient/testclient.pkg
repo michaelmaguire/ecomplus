@@ -1,0 +1,18 @@
+; testclient.pkg
+;
+
+;Language - standard language definitions
+&EN
+
+; standard SIS file header
+#{"testclient"},(0x43924393),1,0,0
+
+;Supports Series 60 v 2.0
+(0x101F7960), 0, 0, 0, {"Series60ProductID"}
+
+@"..\ecomplus\ecomplus.sis",(0x10200DE7)
+
+;
+"epoc32\release\armi\urel\testclient.exe"-"!:\system\apps\testclient\testclient.exe"
+"epoc32\release\armi\urel\testcomp.dll"-"!:\system\libs\plugins\testcomp.dll"
+"Epoc32\data\z\system\libs\plugins\10200DE9.rsc"            -"!:\System\Libs\Plugins\10200DE9.rsc"

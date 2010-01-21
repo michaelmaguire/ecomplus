@@ -1,0 +1,48 @@
+/**
+*
+* Copyright © 2004 Michael Maguire.
+* 
+* You are hereby granted free use of the software in this file,
+* provided you maintain this entire copyright notice at the top.
+*
+* This software is provided "as is," and the copyright holder 
+* makes no representations or warranties, express or implied,
+* including but not limited to warranties of merchantability or 
+* fitness for any particular purpose or that the use of this software
+* or documentation will not infringe any third party patents, 
+* copyrights, trademarks or other rights.
+*
+* The copyright holder will not be liable for any direct, indirect
+* special or consequential damages arising out of any use of this
+* software or documentation.
+*
+*/
+
+TARGET testcomp.dll
+TARGETTYPE PLUGIN
+
+// ECom Dll recognition UID followed by the unique UID for this dll
+UID 0x10009D8D 0x10200DE9
+
+VENDORID 0x70000001
+
+CAPABILITY All -TCB
+
+SOURCEPATH      ..\src
+SOURCE		dllmain.cpp
+SOURCE		TestComponent.cpp
+
+USERINCLUDE     ..\inc
+SYSTEMINCLUDE 	\epoc32\include 
+SYSTEMINCLUDE 	\epoc32\include\ecom
+
+START RESOURCE ..\data\10200DE9.RSS
+#ifdef SYMBIAN_SECURE_ECOM
+TARGET testcomp.rsc
+#endif
+END
+
+LIBRARY 	euser.lib
+LIBRARY		ECom.lib
+LIBRARY		EComPlus.lib
+

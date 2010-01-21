@@ -1,0 +1,51 @@
+/**
+*
+* Copyright © 2004 Blue Whale Systems Ltd.
+* 
+* You are hereby granted free use of the software in this file,
+* provided you maintain this entire copyright notice at the top.
+*
+* This software is provided "as is," and the copyright holder 
+* makes no representations or warranties, express or implied,
+* including but not limited to warranties of merchantability or 
+* fitness for any particular purpose or that the use of this software
+* or documentation will not infringe any third party patents, 
+* copyrights, trademarks or other rights.
+*
+* The copyright holder will not be liable for any direct, indirect
+* special or consequential damages arising out of any use of this
+* software or documentation.
+*
+*/
+
+/*
+*	A specific mmp file for the UIQ 3 build of ECOMPLUS
+*	
+*/
+MACRO __DONT_USE_IN_CODE__MMP_ONLY__UIQ_V3_FP0__
+
+
+TARGET        ECOMPLUS.dll
+TARGETTYPE    dll
+UID           0x1000008d 0x2000E278
+
+//VENDORID        0
+CAPABILITY     NetworkServices ReadUserData WriteUserData ReadDeviceData WriteDeviceData
+
+SOURCEPATH    .
+SOURCE        ..\src\ECOMPLUS.cpp
+
+USERINCLUDE   .
+USERINCLUDE   ..\inc
+SYSTEMINCLUDE \Epoc32\include
+
+LIBRARY		  euser.lib
+LIBRARY       ecom.lib
+
+#if defined(WINS)
+    deffile .\ECOMPLUSWINS.def
+#else if defined(ARM)
+    deffile .\ECOMPLUSARM.def
+#endif
+nostrictdef
+//EXPORTUNFROZEN
