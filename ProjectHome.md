@@ -1,0 +1,1 @@
+Symbian C++ interfaces (e.g. MUnknown), some optional utility classes, and a ECOMPLUS DLL for making Symbian's existing ECOM framework work a little bit more like COM on Windows (tm). First published 2004 on http://www.newlc.com/ECOMPLUS.html
